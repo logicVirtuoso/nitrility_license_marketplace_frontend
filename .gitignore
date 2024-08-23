@@ -9,8 +9,6 @@ dist/
 build/
 
 # Local Env
-.env
 .env.local
-.env.local___
 
 
