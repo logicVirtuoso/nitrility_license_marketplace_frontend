@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "lib": ["es6", "dom", "dom.iterable", "esnext", "es2015"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": false,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "downlevelIteration": true,
+    "paths": {
+      "api": ["src/api"],
+      "assets": ["src/assets"],
+      "components": ["src/components"],
+      "interface": ["src/interface"],
+      "pages": ["src/pages"],
+      "routes": ["src/routes"],
+      "store": ["src/store"],
+      "utils": ["src/utils"]
+    }
+    // "noImplicitAny": true,
+    // "noImplicitThis": true,
+    // "strictNullChecks": true
+  },
+  "include": ["src"]
+}

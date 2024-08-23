@@ -1,0 +1,85 @@
+/* Carousel Style */
+[class^='number-slide'],
+[class*=' number-slide'] {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  max-height: 100vh;
+  height: auto;
+}
+
+.number-slide {
+  border-radius: 12px;
+  background-color: transparent;
+  height: auto;
+}
+
+.number-slide .license-card-container {
+  margin: 0px;
+}
+
+.animated-carousel-block {
+  width: 100%;
+  position: relative;
+}
+
+.navigation-wrapper {
+  width: inherit;
+  z-index: 1;
+}
+
+.keenslider-wrapper {
+  position: relative;
+  margin-top: 10px;
+}
+
+.animated-carousel-block .arrow {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  background-color: var(--colors-white);
+  cursor: pointer;
+  z-index: 3;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
+}
+
+.animated-carousel-block .arrow:hover {
+  background-color: var(--colors-white);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 0px 0px 1px,
+    rgba(67, 66, 68, 0.12) 0px 18px 30px 10px;
+  color: var(--colors-black);
+}
+
+.animated-carousel-block .arrow > svg {
+  /* transform: scale(1.3); */
+  fill: #737373;
+}
+
+.animated-carousel-block .arrow:hover svg {
+  fill: rgb(41, 41, 41);
+}
+
+.animated-carousel-block .arrow--left {
+  left: -20px;
+}
+
+.animated-carousel-block .arrow--right {
+  left: auto;
+  right: -20px;
+}
+
+.animated-carousel-block .arrow--disabled {
+  fill: rgba(151, 151, 151, 0.5);
+}

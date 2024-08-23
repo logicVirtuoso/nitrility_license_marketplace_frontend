@@ -1,0 +1,221 @@
+/* Carousel Style */
+[class^='cinematic-number-slide'],
+[class*=' cinematic-number-slide'] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: grab;
+}
+
+.cinematic-number-slide {
+  position: relative;
+  border-radius: 12px;
+  background-color: transparent;
+  height: 250px;
+  max-height: 250px !important;
+}
+
+.cinematic-number-slide .license-card-container {
+  margin: 0px;
+}
+
+.cinema-block {
+  position: relative;
+  height: 575px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  align-items: center;
+}
+
+.cinema-container {
+  width: calc(100% - 260px);
+}
+
+.cinema-block .navigation-wrapper {
+  position: absolute;
+  bottom: 0px;
+  width: inherit;
+  z-index: 1;
+}
+
+.keenslider-wrapper {
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  height: 80px;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dot .active {
+  background-color: rgb(255, 255, 255);
+  animation-name: progressAnimation;
+  animation-duration: 2s;
+  width: 64px;
+  height: 4px;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.dot {
+  border-radius: 0.75rem;
+  width: 64px;
+  height: 4px;
+  background: hsla(0, 0%, 100%, 0.2);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* .dot::after {
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: expand;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 255, 255);
+    animation-iteration-count: infinite;
+} */
+
+@keyframes progressAnimation {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 32px;
+  }
+  100% {
+    width: 64px;
+  }
+}
+
+.dot:focus {
+  outline: none;
+}
+
+/* .dot.active {
+    background-color: #ffffff;
+} */
+
+.arrow {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #5e5e5e;
+  background-color: #fff;
+  cursor: pointer;
+  z-index: 3;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow:hover {
+  background-color: #ececec;
+}
+
+.arrow:hover svg {
+  color: #575757;
+}
+
+.arrow--left {
+  left: 30px;
+}
+
+.arrow--right {
+  left: auto;
+  right: 30px;
+}
+
+.arrow--disabled {
+  fill: rgba(151, 151, 151, 0.5);
+}
+
+.infinite-animatedTextRotation {
+  animation: animatedTextRotation 4.5s ease-in-out infinite alternate;
+}
+
+.infinite-animatedTextScale {
+  animation: animatedTextScale 4.5s ease-in-out infinite;
+}
+
+.animation-direction-alternate-reverse {
+  animation-direction: alternate-reverse;
+}
+
+.animation-direction-alternate {
+  animation-direction: alternate;
+}
+
+.transform-origin-center-left {
+  transform-origin: center left;
+}
+
+.carousel-status {
+  display: none;
+}
+
+@keyframes animatedTextRotation {
+  0% {
+    transform: translateY(0);
+  }
+
+  47% {
+    transform: translateY(0);
+  }
+
+  53% {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes animatedTextScale {
+  0% {
+    transform: scale(1);
+  }
+
+  47% {
+    transform: scale(1);
+  }
+
+  53% {
+    transform: scale(0.7);
+  }
+
+  to {
+    transform: scale(0.7);
+  }
+}

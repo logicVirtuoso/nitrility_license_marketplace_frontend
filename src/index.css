@@ -1,0 +1,67 @@
+@import url('https://rsms.me/inter/inter.css');
+
+body {
+  margin: 0px !important;
+  padding: 0px !important;
+  font-family: var(--font-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: Geist-Regular, source-code-pro, Menlo, Monaco, Consolas,
+    'Courier New', monospace;
+}
+
+:root {
+  --colors-white: #fff;
+  --colors-neutral800: #262626;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+
+  --font-base: 'Geist', sans-serif; /* Define the base font family */
+  --font-semi-bold: Geist-Semibold;
+  --font-bold: Geist-Bold;
+  --font-medium: Geist-Medium;
+  --font-mono-regular: Geist-Mono-Regular;
+  --font-black: Geist-Black;
+}
+
+@font-face {
+  font-family: Geist-Semibold;
+  src: url('./assets/fonts/Geist-SemiBold.otf') format('truetype');
+  font-weight: 600; /* SemiBold */
+}
+
+@font-face {
+  font-family: Geist-Bold;
+  src: url('./assets/fonts/Geist-Bold.otf') format('truetype');
+  font-weight: 700; /* Bold */
+}
+
+@font-face {
+  font-family: Geist-Regular;
+  src: url('./assets/fonts/Geist-Regular.otf') format('truetype');
+  font-weight: 400; /* Regular */
+}
+
+@font-face {
+  font-family: Geist-Medium;
+  src: url('./assets/fonts/Geist-Medium.otf') format('truetype');
+  font-weight: 500; /* Medium */
+}
+
+@font-face {
+  font-family: Geist-Mono-Regular;
+  src: url('./assets/fonts/GeistMono-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: Geist-Black;
+  src: url('./assets/fonts/Geist-Black.otf') format('truetype');
+}

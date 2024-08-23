@@ -1,0 +1,38 @@
+/* Top Selling Licenses */
+.time-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.04);
+    padding: 2px;
+    overflow: hidden;
+    border-radius: 10px;
+    gap: 6px;
+}
+
+.time-selector div {
+    border-radius: 10px !important;
+    height: 48px;
+    text-transform: none;
+    transition: all 0.3s ease 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.time-selector div:hover {
+    background-color: #ededed;
+}
+
+.time-selector .selected-btn {
+    color: rgb(100, 109, 117) !important;
+    background-color: #fff;
+}
+
+.time-selector .unselected-btn {
+    color: rgb(4, 17, 29) !important;
+}
