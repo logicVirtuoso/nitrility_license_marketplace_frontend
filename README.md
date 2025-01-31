@@ -1,29 +1,54 @@
-# React.js Frontend for Nitrility
+Nitrility License Marketplace
 
-This repository contains the code for a React.js frontend for Nitrility that communicates with a backend API to display data and handle user interactions.
+Overview
 
-## Prerequisites
+Nitrility is the first marketplace dedicated to buying, selling, and verifying intellectual property (IP) licenses. Our platform ensures a secure, transparent, and efficient process for creators and businesses to manage their IP transactions.
 
-Before running the frontend, make sure you have the following installed:
+Features
 
-- Node.js (version 16.13.2)
-- npm (version 8.5.1)
+Buy & Sell IP Licenses – A seamless platform for acquiring and monetizing intellectual property.
 
-## Getting Started
+Verification System – Ensures authenticity and transparency in IP transactions.
 
-1. Clone this repository: `git clone https://moonshotFactory@bitbucket.org/nitrility1/frontend.git`
-2. Install dependencies: `npm install`
-3. Configure the API endpoint by updating the `config.js` file with the appropriate URL.
-4. Start the development server: `npm start`
+Decentralized & Secure – Built with cutting-edge technologies to protect users and their assets.
 
-## Components
+Partner Integrations – Works with Spotify, YouTube, Magic Wallet, and more.
 
-This frontend is composed of several reusable components, including:
+User-Friendly Interface – Optimized for an intuitive experience, ensuring smooth navigation and interactions.
 
-## Routing
+Tech Stack
 
-This frontend uses React Router to handle client-side routing. The following routes are defined:
+Frontend: React.js (initial UI inspired by Sound.xyz, with custom enhancements)
 
-## Testing
+Backend: Node.js, Golang
 
-To run the tests, use the following
+Database: PostgreSQL, DynamoDB
+
+Authentication: Magic Wallet, OAuth
+
+Hosting & Deployment: AWS, Vercel
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/LogicVirtuoso/nitrility_license_marketplace_frontend.git
+cd license-marketplace
+
+Install dependencies:
+
+npm install
+
+Start the development server:
+
+npm run dev
+
+Open your browser and navigate to http://localhost:3000
+
+Contribution
+
+We welcome contributions! Feel free to submit pull requests or report issues to help improve the platform.
+
+License
+
+This project is open-source and freely available to the community. Enjoy and innovate!
