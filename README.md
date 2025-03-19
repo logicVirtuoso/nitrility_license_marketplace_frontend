@@ -1,5 +1,7 @@
 Nitrility License Marketplace
 
+https://www.figma.com/design/59sSU7g3RDa4LCQyuqbynT/Nitrility?node-id=0-1&p=f&t=tDCZXWVxEaLdwXJO-0
+
 Overview
 
 Nitrility is the first marketplace dedicated to buying, selling, and verifying intellectual property (IP) licenses. Our platform ensures a secure, transparent, and efficient process for creators and businesses to manage their IP transactions.
